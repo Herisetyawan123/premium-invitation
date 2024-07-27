@@ -82,3 +82,20 @@ document.querySelector(".next").addEventListener("click", () => {
   moveToNextSlide();
   autoSlideInterval = setInterval(moveToNextSlide, 3000); // Restart auto slide
 });
+
+// audio controll
+const audio = document.getElementById("myAudio");
+const playIcon = document.getElementById("playIcon");
+const pauseIcon = document.getElementById("pauseIcon");
+
+function toggleAudio() {
+  if (audio.paused) {
+    audio.play();
+    playIcon.classList.add("hidden");
+    pauseIcon.classList.remove("hidden");
+  } else {
+    audio.pause();
+    playIcon.classList.remove("hidden");
+    pauseIcon.classList.add("hidden");
+  }
+}
