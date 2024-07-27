@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+
+@font-face {
+  font-family: "Rondal-Regular";
+  src: url("./fonts/Rondal-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rondal-Bold";
+  src: url("./fonts/Rondal-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rondal-SemiBold";
+  src: url("./fonts/Rondal-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.overlay {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.overlay.animate-slide-up {
+  animation-name: slide-up;
+}
