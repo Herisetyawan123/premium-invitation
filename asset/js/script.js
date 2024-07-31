@@ -4,6 +4,9 @@ const coverInvitation = document.getElementById("cover-invitation");
 
 openInvitation.addEventListener("click", () => {
   coverInvitation.classList.toggle("hidden");
+
+  document.querySelector("main").classList.toggle("overflow-y-hidden");
+  document.querySelector("main").classList.toggle("h-[100vh]");
   toggleAudio();
   console.log("opened");
 });
